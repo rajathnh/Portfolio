@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajath N H - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+          
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Space Grotesk', sans-serif; }
+        .gradient-text { background: linear-gradient(90deg, #9857D3 0%, #763CAC 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .project-card { background: linear-gradient(145deg, #1A0B2E 0%, #2B0B3A 100%); }
+    </style>
+</head>
+<body class="bg-[#11071F] text-gray-100">
+    <!-- Navigation -->
+    <nav class="fixed w-full py-4 bg-[#1A0B2E]/90 backdrop-blur-md z-50">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <img src="pic1.png" alt="Rajath N H" class="w-8 h-8 rounded-full object-cover">
+                <span class="text-xl font-bold">Rajath N H</span>
+            </div>
+        </div>
+    </nav>
+
+<!-- Hero Section -->
+<section class="min-h-screen pt-32 pb-20 px-6">
+    <div class="container mx-auto max-w-4xl">
+        <div class="flex flex-col md:flex-row items-center gap-12">
+            <div class="relative w-64 h-64 rounded-full bg-gradient-to-br from-[#2B215A] to-[#2B0B3A] p-1">
+                <img src="pic1.png" alt="Rajath N H" class="w-full h-full rounded-full object-cover">
+            </div>
+            <div class="flex-1">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">
+                    Aspiring <span class="gradient-text">Backend Developer</span>
+                </h1>
+                <p class="text-xl text-gray-300 mb-8">
+                    Building robust, scalable applications & exploring AI. Passionate about impactful solutions through technology.
+                </p>
+                <div class="flex gap-4">
+                    <a href="https://github.com/SilverDragon12" target="_blank" class="px-6 py-3 bg-purple-600 hover:bg-purple-700 rounded-lg transition-colors">
+                        GitHub Profile
+                    </a>
+                    <a href="https://drive.google.com/file/d/1DkfHfszddnAXdLsCveS9Ys5qGQISEMM9/view" target="_blank" class="px-6 py-3 border border-purple-600 hover:bg-purple-600/20 rounded-lg transition-colors">
+                        Download Resume
+                    </a>
+                    <a href="https://www.linkedin.com/in/rajathnh/" target="_blank" class="px-6 py-3 bg-purple-600 hover:bg-purple-700 rounded-lg transition-colors">
+                        LinkedIn Profile
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+   <!-- Projects Section -->
+<section class="py-20 px-6 bg-[#0D0519]">
+    <div class="container mx-auto max-w-4xl">
+        <h2 class="text-3xl font-bold mb-12 gradient-text">Featured Projects</h2>
+
+        <!-- SwiftWork Project -->
+        <div class="project-card rounded-2xl p-8 mb-12">
+            <div class="flex items-center gap-4 mb-6">
+                <h3 class="text-2xl font-bold">SwiftWork - Freelancing Platform</h3>
+            </div>
+            <p class="text-gray-300 mb-6">Full-stack freelancing platform with real-time collaboration features</p>
+            <div class="flex flex-wrap gap-2 mb-6">
+                <span class="px-3 py-1 bg-purple-600/20 text-purple-400 rounded-full text-sm">Node.js</span>
+                <span class="px-3 py-1 bg-purple-600/20 text-purple-400 rounded-full text-sm">Express.js</span>
+                <span class="px-3 py-1 bg-purple-600/20 text-purple-400 rounded-full text-sm">JavaScript</span>
+                <span class="px-3 py-1 bg-purple-600/20 text-purple-400 rounded-full text-sm">WebRTC</span>
+                <span class="px-3 py-1 bg-purple-600/20 text-purple-400 rounded-full text-sm">WebSockets</span>
+                <span class="px-3 py-1 bg-purple-600/20 text-purple-400 rounded-full text-sm">MongoDB</span>
+                <span class="px-3 py-1 bg-purple-600/20 text-purple-400 rounded-full text-sm">HTML</span>
+                <span class="px-3 py-1 bg-purple-600/20 text-purple-400 rounded-full text-sm">CSS</span>                    
+            </div>
+            <a href="https://swiftwork.onrender.com/" target="_blank" class="inline-flex items-center text-purple-400 hover:text-purple-300">
+                <span>Live Demo</span>
+                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                </svg>
+            </a>
+
+            <!-- Dropdown Button for Detailed Explanation -->
+            <div class="mt-4">
+                <button class="px-6 py-2 bg-purple-600 text-white rounded-lg focus:outline-none" onclick="toggleDropdown('swiftwork-details')">
+                    More Details
+                </button>
+                <div id="swiftwork-details" class="hidden mt-4 text-gray-300">
+                    
+                    <p class="mt-2">
+                        Engineered the backend of a freelancing platform, enabling seamless job postings, bidding, and real-time collaboration for users.
+                    </p>
+                    <p class="mt-4"><strong>Tech Stack:</strong> Node.js, Express.js, MongoDB, WebSockets, WebRTC, JWT Authentication, HTML, CSS, JavaScript, Cloudinary.</p>
+                    <h4 class="font-bold mt-4">Key Contributions:</h4>
+                    <ul class="list-disc ml-6 mt-2">
+                        <li>Developed the backend with secure authentication (JWT) and user role management.</li>
+                        <li>Implemented job listings & bidding system, enabling smooth project assignments.</li>
+                        <li>Integrated real-time chat & video calls using WebRTC & WebSockets for seamless communication.</li>
+                        <li>Designed & implemented a skill verification badge system, allowing freelancers to showcase verified expertise and build client trust.</li>
+                        <li>Optimized database queries for scalability and efficient data handling.</li>
+                        <li>Collaborated with teammates who handled UI/UX design to ensure smooth integration.</li>
+                    </ul>
+                    <h4 class="font-bold mt-4">Impact:</h4>
+                    <ul class="list-disc ml-6 mt-2">
+                        <li>Built a fully functional backend and integrated real-time features.</li>
+                        <li>Gained hands-on experience with WebRTC and WebSockets for real-time communication.</li>
+                        <li>Successfully deployed and tested platform functionalities with multiple users.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- E-Commerce API Project -->
+        <div class="project-card rounded-2xl p-8 mb-12">
+            <div class="flex items-center gap-4 mb-6">
+                <h3 class="text-2xl font-bold">E-Commerce API</h3>
+            </div>
+            <p class="text-gray-300 mb-6">Scalable REST API for e-commerce platform with secure authentication</p>
+            <div class="flex flex-wrap gap-2 mb-6">
+                <span class="px-3 py-1 bg-purple-600/20 text-purple-400 rounded-full text-sm">Node.js</span>
+                <span class="px-3 py-1 bg-purple-600/20 text-purple-400 rounded-full text-sm">Express.js</span>
+                <span class="px-3 py-1 bg-purple-600/20 text-purple-400 rounded-full text-sm">JavaScript</span>                    
+                <span class="px-3 py-1 bg-purple-600/20 text-purple-400 rounded-full text-sm">MongoDB</span>
+                <span class="px-3 py-1 bg-purple-600/20 text-purple-400 rounded-full text-sm">Swagger UI</span>                    
+            </div>
+            <a href="https://ecommerceapi-wcaz.onrender.com" target="_blank" class="inline-flex items-center text-purple-400 hover:text-purple-300">
+                <span>API Documentation</span>
+                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                </svg>
+            </a>
+
+            <!-- Dropdown Button for Detailed Explanation -->
+            <div class="mt-4">
+                <button class="px-6 py-2 bg-purple-600 text-white rounded-lg focus:outline-none" onclick="toggleDropdown('ecommerce-api-details')">
+                    More Details
+                </button>
+                <div id="ecommerce-api-details" class="hidden mt-4 text-gray-300">
+                    
+                    <p class="mt-2">
+                        Designed & implemented a scalable REST API for an e-commerce platform, supporting user authentication, product management, and order processing.
+                    </p>
+                    <p class="mt-4"><strong>Tech Stack:</strong> Node.js, Express.js, MongoDB, JWT Authentication, Cloudinary, RESTful APIs, Swagger UI.</p>
+                    <h4 class="font-bold mt-4">Key Features:</h4>
+                    <ul class="list-disc ml-6 mt-2">
+                        <li>User Authentication & Authorization – Secure login & role-based access using JWT & cookies.</li>
+                        <li>Product Management – CRUD operations for adding, updating, and deleting products.</li>
+                        <li>Order Processing – Implemented cart, checkout, and order history functionality.</li>
+                        <li>File Uploads – Enabled image uploads for products using Cloudinary.</li>
+                        <li>Security Measures – Implemented rate limiting, CORS, and data sanitization for security.</li>
+                    </ul>
+                    <h4 class="font-bold mt-4">Impact:</h4>
+                    <ul class="list-disc ml-6 mt-2">
+                        <li>Designed a structured, modular API, making it easy to integrate with frontends.</li>
+                        <li>Improved security by implementing authentication, data validation, and API rate limiting.</li>
+                        <li>Enhanced performance with optimized database queries and indexing.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Add JavaScript to toggle the dropdown -->
+<script>
+    function toggleDropdown(id) {
+        const element = document.getElementById(id);
+        element.classList.toggle("hidden");
+    }
+</script>
+
+   <!-- Technical Skills Section -->
+<section class="py-20 px-6 bg-[#0D0519]">
+    <div class="container mx-auto max-w-4xl text-center">
+        <h2 class="text-3xl font-bold mb-12 gradient-text text-left">Technical Skills</h2> <!-- Aligned text to the left -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <!-- Node.js -->
+            <div class="p-6 bg-[#1A0B2E] rounded-xl flex flex-col items-center justify-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg" alt="Node.js" class="w-16 h-16 mb-3">
+                <p class="mt-2">Node.js</p>
+            </div>
+            <!-- Express.js -->
+            <div class="p-6 bg-[#1A0B2E] rounded-xl flex flex-col items-center justify-center">
+                <div class="p-4 bg-[#1A0B2E] rounded-full flex justify-center items-center">
+                    <i class="devicon-express-original text-white text-6xl"></i>
+                </div>            
+                <p class="mt-2 mb-1 flex-grow">Express.js</p> <!-- Adjusted text margin -->
+            </div>
+            <!-- JavaScript -->
+            <div class="p-6 bg-[#1A0B2E] rounded-xl flex flex-col items-center justify-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" alt="JavaScript" class="w-16 h-16 mb-3">
+                <p class="mt-2">JavaScript</p>
+            </div>
+            <!-- MongoDB -->
+            <div class="p-6 bg-[#1A0B2E] rounded-xl flex flex-col items-center justify-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg" alt="MongoDB" class="w-16 h-16 mb-3">
+                <p class="mt-2">MongoDB</p>
+            </div>
+            <!-- HTML -->
+            <div class="p-6 bg-[#1A0B2E] rounded-xl flex flex-col items-center justify-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" 
+ alt="HTML" class="w-16 h-16 mb-3">
+                <p class="mt-2">HTML</p>
+            </div>
+            <!-- CSS -->
+            <div class="p-6 bg-[#1A0B2E] rounded-xl flex flex-col items-center justify-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"                 alt="CSS" class="w-16 h-16 mb-3">
+                <p class="mt-2">CSS</p>
+            </div>
+            <!-- Swagger -->
+            <div class="p-6 bg-[#1A0B2E] rounded-xl flex flex-col items-center justify-center">
+                <div class="p-4 bg-[#1A0B2E] rounded-full flex justify-center items-center">
+                    <i class="devicon-swagger-plain text-white text-6xl"></i>
+                </div>
+                <p class="mt-2 mb-1 flex-grow">Swagger</p> <!-- Adjusted text margin -->
+            </div>
+            <!-- Git -->
+            <div class="p-6 bg-[#1A0B2E] rounded-xl flex flex-col items-center justify-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-plain-wordmark.svg"  alt="Git" class="w-16 h-16 mb-3">
+                <p class="mt-2">Git</p>
+            </div>
+            <!-- GitHub -->
+            <div class="p-6 bg-[#1A0B2E] rounded-xl flex flex-col items-center justify-center">
+                <img src="https://github.com/github.png" alt="GitHub" class="w-16 h-16 mb-3 rounded-full bg-white p-2">
+                <p class="mt-2">GitHub</p>
+            </div>
+            <!-- WebRTC -->
+            <div class="p-6 bg-[#1A0B2E] rounded-xl flex flex-col items-center justify-center">
+                <img src="webrtc-logo-vert-retro-255x305.png" alt="WebRTC" class="w-16 h-16 mb-3">
+                <p class="mt-2">WebRTC</p>
+            </div>
+            <!-- WebSockets -->
+            <div class="p-6 bg-[#1A0B2E] rounded-xl flex flex-col items-center justify-center">
+                <img src="WebSocket_Proxy-app-icon-optimized-1253cdd5-5431-42a9-a1a7-be6530b2c48c-removebg-preview.png" alt="WebSockets" class="w-16 h-16 mb-3">
+                <p class="mt-2">WebSockets</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+    <!-- Achievement Section -->
+    <section class="py-20 px-6 bg-[#0D0519]">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-3xl font-bold mb-12 gradient-text text-left">Achievements</h2> <!-- Aligned text to the left -->
+            <div class="p-8 rounded-2xl bg-gradient-to-r from-[#2B215A] to-[#2B0B3A]">
+                <h2 class="text-2xl font-bold mb-4">🏆 Smart India Hackathon 2024 Winner</h2>
+                <p class="text-gray-300">Selected from 500 teams nationwide as joint winner for developing SwiftWork platform</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 bg-[#0D0519]">
+        <div class="container mx-auto max-w-4xl text-center">
+            <p class="text-gray-400 mb-4">Let's connect and build something amazing!</p>
+            <div class="flex justify-center space-x-6">
+                <a href="https://www.linkedin.com/in/rajathnh/" target="_blank" class="text-gray-300 hover:text-purple-400">
+                    LinkedIn
+                </a>
+                <a href="https://github.com/SilverDragon12" target="_blank" class="text-gray-300 hover:text-purple-400">
+                    GitHub
+                </a>
+                <a href="mailto:rajathnh2@gmail.com" class="text-gray-300 hover:text-purple-400">
+                    Email
+                </a>
+            </div>
+            <p class="mt-8 text-gray-500 text-sm">© 2024 Rajath N H. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
