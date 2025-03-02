@@ -23,28 +23,41 @@
                 <img src="pic1.png" alt="Rajath N H" class="w-8 h-8 rounded-full object-cover">
                 <span class="text-xl font-bold">Rajath N H</span>
             </div>
+            <div class="flex gap-4">
+                <!-- Navigation Links -->
+                <a href="#home" class="text-gray-300 hover:text-purple-400">Home</a>
+                <a href="#projects" class="text-gray-300 hover:text-purple-400">Projects</a>
+                <a href="#skills" class="text-gray-300 hover:text-purple-400">Skills</a>
+            </div>
         </div>
     </nav>
-
 <!-- Hero Section -->
-<section class="min-h-screen pt-32 pb-20 px-6">
+ 
+<section id="home" class="min-h-screen pt-32 pb-20 px-6">
     <div class="container mx-auto max-w-4xl">
         <div class="flex flex-col md:flex-row items-center gap-12">
+            <!-- Profile Image -->
             <div class="relative w-64 h-64 rounded-full bg-gradient-to-br from-[#2B215A] to-[#2B0B3A] p-1">
                 <img src="pic1.png" alt="Rajath N H" class="w-full h-full rounded-full object-cover">
             </div>
+            
+            <!-- Name and Description -->
             <div class="flex-1">
-                <h1 class="text-4xl md:text-5xl font-bold mb-4">
-                    Aspiring <span class="gradient-text">Backend Developer</span>
+                <!-- Name -->
+                <h1 class="text-5xl font-bold mb-4">
+                    Rajath N H
                 </h1>
+                <!-- Description -->
                 <p class="text-xl text-gray-300 mb-8">
-                    Building robust, scalable applications & exploring AI. Passionate about impactful solutions through technology.
+                    Aspiring Backend Developer, passionate about building scalable and impactful applications using modern technologies like Node.js, WebRTC, and more.
                 </p>
+                
+                <!-- Links -->
                 <div class="flex gap-4">
-                    <a href="https://github.com/rajathnh" target="_blank" class="px-6 py-3 bg-purple-600 hover:bg-purple-700 rounded-lg transition-colors">
+                    <a href="https://github.com/SilverDragon12" target="_blank" class="px-6 py-3 bg-purple-600 hover:bg-purple-700 rounded-lg transition-colors">
                         GitHub Profile
                     </a>
-                    <a href="https://drive.google.com/file/d/1DkfHfszddnAXdLsCveS9Ys5qGQISEMM9/view" target="_blank" class="px-6 py-3 border border-purple-600 hover:bg-purple-600/20 rounded-lg transition-colors">
+                    <a href="https://drive.google.com/file/d/1DkfHfszddnAXdLsCveS9Ys5qGQISEMM9/view" target="_blank" class="px-6 py-3 bg-purple-600 hover:bg-purple-700 rounded-lg transition-colors">
                         Download Resume
                     </a>
                     <a href="https://www.linkedin.com/in/rajathnh/" target="_blank" class="px-6 py-3 bg-purple-600 hover:bg-purple-700 rounded-lg transition-colors">
@@ -57,8 +70,9 @@
 </section>
 
 
+
    <!-- Projects Section -->
-<section class="py-20 px-6 bg-[#0D0519]">
+<section id="projects" class="py-20 px-6 bg-[#0D0519]">
     <div class="container mx-auto max-w-4xl">
         <h2 class="text-3xl font-bold mb-12 gradient-text">Featured Projects</h2>
 
@@ -175,7 +189,7 @@
 </script>
 
    <!-- Technical Skills Section -->
-<section class="py-20 px-6 bg-[#0D0519]">
+<section id="skills" class="py-20 px-6 bg-[#0D0519]">
     <div class="container mx-auto max-w-4xl text-center">
         <h2 class="text-3xl font-bold mb-12 gradient-text text-left">Technical Skills</h2> <!-- Aligned text to the left -->
         <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
